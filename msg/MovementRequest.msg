@@ -14,5 +14,6 @@ uint64 timestamp
 
 # The commands can be : forward, backward, fly_right, fly_left, yaw_right, yaw_left, up, down
 string command
+
 uint32 command_duration_ms # For how long the command should be applied in ms before going back to stationnary
 

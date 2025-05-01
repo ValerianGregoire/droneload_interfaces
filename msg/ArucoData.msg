@@ -14,10 +14,6 @@ uint64 timestamp
 #       The coordinates are expressed as points directly on the last image received at the time of publication
 
 
-uint16 targets_count
-
-# List of aruco coordinates
-
 # x is oriented to the right, is 0 at the left of the screen, 1 at the right
 float32[] x
 

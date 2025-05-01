@@ -16,4 +16,6 @@ uint64 timestamp
 # Image data
 uint32[2] resolution # width x height
 
-uint8[] pixels # data in a single row
+uint8[] r # red pixels data in a single row
+uint8[] g # green pixels data in a single row
+uint8[] b # blue pixels data in a single row

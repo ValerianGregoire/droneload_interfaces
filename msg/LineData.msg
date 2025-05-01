@@ -13,7 +13,6 @@ uint64 timestamp
 #       This topic gives the coordinates of points of lines of color on the camera image
 #       The topic currently lists lines of three colors, but could be adapted to list all colors using strings
 
-
 # x is oriented to the right, is 0 at the left of the screen, 1 at the right
 float32[] green_line_x
 float32[] yellow_line_x
