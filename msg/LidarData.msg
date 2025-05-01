@@ -9,11 +9,10 @@
 # Message time of publication
 uint64 timestamp
 
-# Lidar data
-uint16 measures_count
+# Lidar data topic:
+#       This topic gives the raw output from the LiDAR component
 
-float32[] distances
-float32[] angles
-float32 angle_step
+float32[] distances # Will be <0 (preferably -1) if no object collided with the ray
+float32 angle_step # Angle value between two measures
 
-bool in_radians
+bool in_radians # Whether data is given in degrees or radians

@@ -9,11 +9,20 @@
 # Message time of publication
 uint64 timestamp
 
-# Lidar data
-uint16 measures_count
+# Aruco data topic:
+#       This topic lists the ids and coordinates of arucos detected from the camera's images
+#       The coordinates are expressed as points directly on the last image received at the time of publication
 
-float32[] distances
-float32[] angles
-float32 angle_step
 
-bool in_radians
+uint16 targets_count
+
+# List of aruco coordinates
+
+# x is oriented to the right, is 0 at the left of the screen, 1 at the right
+float32[] x
+
+# y is oriented downward, is 0 at the top of the screen, 1 at the bottom
+float32[] y
+
+# Values of each aruco detected
+uint8[] values

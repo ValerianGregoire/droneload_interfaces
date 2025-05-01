@@ -9,11 +9,10 @@
 # Message time of publication
 uint64 timestamp
 
-# Lidar data
-uint16 measures_count
+# Movement request topic:
+#       This topic gives the movement commands that need to be sent to PX4 to control the drone
 
-float32[] distances
-float32[] angles
-float32 angle_step
+# The commands can be : forward, backward, fly_right, fly_left, yaw_right, yaw_left, up, down
+string command
+uint32 command_duration_ms # For how long the command should be applied in ms before going back to stationnary
 
-bool in_radians

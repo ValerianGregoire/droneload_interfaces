@@ -9,11 +9,17 @@
 # Message time of publication
 uint64 timestamp
 
-# Lidar data
-uint16 measures_count
+# Line data topic:
+#       This topic gives the coordinates of points of lines of color on the camera image
+#       The topic currently lists lines of three colors, but could be adapted to list all colors using strings
 
-float32[] distances
-float32[] angles
-float32 angle_step
 
-bool in_radians
+# x is oriented to the right, is 0 at the left of the screen, 1 at the right
+float32[] green_line_x
+float32[] yellow_line_x
+float32[] blue_line_x
+
+# y is oriented downward, is 0 at the top of the screen, 1 at the bottom
+float32[] green_line_y
+float32[] yellow_line_y
+float32[] blue_line_y

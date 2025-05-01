@@ -9,11 +9,3 @@
 # Message time of publication
 uint64 timestamp
 
-# Lidar data
-uint16 measures_count
-
-float32[] distances
-float32[] angles
-float32 angle_step
-
-bool in_radians

@@ -9,11 +9,11 @@
 # Message time of publication
 uint64 timestamp
 
-# Lidar data
-uint16 measures_count
+# Camera data topic:
+#       This topic gives the raw output from the camera component
+#       For convenience, the pixels are listed as a single line instead of a matrix
 
-float32[] distances
-float32[] angles
-float32 angle_step
+# Image data
+uint32[2] resolution # width x height
 
-bool in_radians
+uint8[] pixels # data in a single row
