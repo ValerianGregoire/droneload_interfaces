@@ -8,3 +8,15 @@
 #### MSG DEFINITION
 # Message time of publication
 uint64 timestamp
+
+# Picture data topic:
+#       This topic lists the coordinates of the center of pictures found on the camera image
+
+# x is oriented to the right, is 0 at the left of the screen, 1 at the right
+float32[] x
+
+# y is oriented downward, is 0 at the top of the screen, 1 at the bottom
+float32[] y
+
+# Types of pictures found (e.g. clownfish; bird; jellyfish...)
+string[] values
