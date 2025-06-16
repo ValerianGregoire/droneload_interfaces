@@ -19,4 +19,11 @@ float32[] x
 float32[] y
 
 # Types of pictures found (e.g. clownfish; bird; jellyfish...)
-string[] values
+string[] classes
+
+# Confidence in percentage from 0 to 1 of the recognized classes (0-1)
+float32[] confidences
+
+
+# Surfaces of the pictures found in portion of the total image plane (0-1)
+float32[] scales
